@@ -56,15 +56,16 @@ h6 {
 
 p {
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 section {
   padding: 5rem 0;
 }
 
-@media screen and (min-width: 1640px) {
+@media screen and (min-width: 1660px) {
   .container-xxl {
-    min-width: 1640px
+    min-width: 1600px
   }
 }
 
@@ -91,7 +92,6 @@ section {
 
 .content-wrapper p {
   margin: 50px 0;
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -341,6 +341,10 @@ section {
   position: relative;
 }
 
+.golf-sec .content-box {
+  position: absolute;
+}
+
 .golf-sec .container-xxl {
   margin-left: 0;
   padding-left: 0;
@@ -378,6 +382,10 @@ section {
   margin: 20px 0 70px;
 }
 
+.lifestyle-sec .content-wrapper p {
+  padding: 0 15%;
+}
+
 .life-btn {
   color: var(--primary-color);
   font-size: 18px;
@@ -386,13 +394,12 @@ section {
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
+  transition: all .3s ease-in-out;
 }
 
 .life-btn:hover {
   background: var(--primary-color);
   color: var(--white);
-  border: 1px solid var(--white);
-  transition: all .3s ease-in-out;
 }
 
 .card-wrapper {
@@ -423,20 +430,24 @@ section {
 /* <!-- Section-4 --> */
 
 .about-boast-sec {
-  background: url(../images/full-image.jpg)no-repeat top center/cover;
-  height: 707px;
+  background: url(../images/full-image.jpg) no-repeat 0px 80px / cover;
+  height: 675px;
   position: relative;
+  padding: 0;
 }
 
 .content-box.dark-box {
   padding: 40px 45px 55px;
-  position: absolute;
-  bottom: 24rem;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: auto;
 }
 
 .content-box.dark-box p {
   margin: 30px 0 50px;
   padding-right: 85px;
+  font-size: 18px;
 }
 
 .dark-box .sub-heading {
@@ -533,7 +544,7 @@ section {
 
 .foot-text {
   color: var(--white);
-  padding:7rem 8rem 4rem 0;
+  padding: 7rem 0rem 4rem 0;
 }
 
 .foot-list {
@@ -604,9 +615,9 @@ section {
 }
 
 .arrow-up {
-  position: absolute;
-  right: 0px;
-  bottom: -2px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
   cursor: pointer;
 }
 

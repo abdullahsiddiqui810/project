@@ -1,19 +1,55 @@
-@media screen and (max-width: 1720px) {
-   
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px
+    } 
 }
 
 @media (max-width: 1440px) {
     
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1400px
+    .about-boast-sec {
+        background-position: -150px 80px;
     }
-    
+    .footer-sec {
+        padding: 4rem 0 2rem;
+    }
+    .copy-right {
+        font-size: 18px;
+    }
+    .foot-text {
+        padding: 5rem 0rem 4rem 0;
+    }
+    .contact-wrapper {
+        padding: 5rem 2rem 0 0;
+    }
+    .main-heading {
+        font-size: 30px;
+    }
+    .heading-wrapper img {
+        margin-bottom: 25px;
+    }
+    .sub-heading {
+        margin: 0px 0 20px;
+    }
+    .content-wrapper p {
+        margin: 25px 0;
+    }
+    .golf-sec .our-mission p {
+        margin: 10px 0 30px;
+        padding-right: 15px;
+    }
+    .main-heading br {
+        display: none;
+    }
+
+    .golf-sec .content-box {
+        width: 600px;
+    }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
+    p {
+        font-size: 16px;
+      }
     .border-right{
         border: none;
         padding: 0;
@@ -25,15 +61,13 @@
         padding-right: 16px;
     }
     .about-boast-sec .content-box{
-        width: 600px;
-        right: 65px;
-        bottom: 0;
+        position: relative;
     }
     .golf-sec .content-box {
-    position: relative !important;
-    top: 10px;
-    right: 252px;
-    width: 600px;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: auto;
     }
     .main-heading{
         font-size: 28px;
@@ -60,11 +94,7 @@
 }
 
 @media (max-width: 1120px) {
-    .club-sec .col-md-6{
-        flex: 100%;
-        width: 100%;
-        text-align: center;
-    }
+    
     .club-sec .heading-wrapper br {
         display: none;
     }
@@ -189,7 +219,47 @@
 }
 
 @media (max-width: 575px) {
-   
+
+    .about-boast-sec {
+        height: auto;
+    }
+
+    .heading-min {
+        font-size: 28px;
+        margin: 0;
+        line-height: 130%;
+    }
+    
+    .layoutSet {
+        padding: 15px;
+        gap: 30px;
+        text-align: center;
+    }
+    .layoutSet div {
+        grid-column: col-start / span 12;
+        padding: 0;
+    }
+    .item-img-left img, .item-img-right img {
+        border-radius: 20px;
+    }
+    
+    .item-img-left {
+        grid-row: 1 / 2;
+    }
+    .item-content-left {
+        grid-row: 2 / 3;
+    }
+    .item-content-right {
+        grid-row: 4 / 5;
+        text-align: center;
+    }
+    .item-img-right {
+        grid-row: 3 / 4;
+    }
+
+    .foot-list {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 414px) {
