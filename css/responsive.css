@@ -1,0 +1,177 @@
+@media screen and (max-width: 1720px) {
+   
+}
+
+@media (max-width: 1440px) {
+    
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .border-right{
+        border: none;
+        padding: 0;
+    }
+    .item-content-left{
+        padding-left: 16px;
+    }
+    .item-content-right{
+        padding-right: 16px;
+    }
+    .about-boast-sec .content-box{
+        width: 600px;
+        right: 65px;
+        bottom: 0;
+    }
+    .golf-sec .content-box {
+    position: relative !important;
+    top: 10px;
+    right: 252px;
+    width: 600px;
+    }
+    .main-heading{
+        font-size: 28px;
+    }
+    .our-mission .sub-heading{
+        font-size: 16px;
+    } 
+    .golf-sec .our-mission p{
+        font-size: 16px;
+    }
+    .sub-heading{
+        font-size: 16px;
+    }
+    .default-btn{
+        font-size: 16px;
+    }
+    .content-wrapper p{
+        font-size: 16px;
+        margin: 30px 0;
+    }
+    .heading-min{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .club-sec .col-md-6{
+        flex: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .club-sec .heading-wrapper br {
+        display: none;
+    }
+    .heading-wrapper img {
+        margin: 15px auto;
+    }
+    .club-sec  .default-btn{
+        margin-bottom: 15px;
+    }
+     .paragraph-margin{
+        padding: 0;
+     }
+     .club-sec .content-wrapper p{
+        padding: 0;
+     }
+     .foot-list{
+        justify-content: center;
+     }
+     .footer-sec .col-md-5 {
+        flex: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .foot-text {
+        padding: 5rem 0 2rem;
+    }
+    .footer-sec .contact-wrapper{
+        padding: 2rem ;
+    }
+    .footer-sec .col-md-3 {
+        flex: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-sec .col-md-4 {
+        flex: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .social-media{
+        justify-content: center;
+        gap: 40px;
+        padding: 1rem 0;
+    }
+    .top-space{
+        margin-top: 3rem;
+    }
+    .header-btn {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    section{
+        padding: 3rem 0;
+    }
+    .life-btn {
+        font-size: 14px;
+        padding: 15px;
+    }
+    .header-btn {
+        padding: 13px;
+        font-size: 14px;
+    }
+    .item-img-left img ,.item-img-right img{
+        height: auto;
+    }
+    .layoutSet {
+        display: block;
+    }
+    .footer-sec .contact-wrapper span{
+        font-size: 16px;
+    }
+    .copy-right{
+        font-size: 16px;
+    }
+    .social-media img {
+        width: 20px;
+        height: auto;
+    }
+    .footer-sec{
+        padding: 3rem 0;
+    }
+    .custom-section{
+        padding: 6rem 0 3rem;
+    }
+    .golf-sec .content-box br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 767px) {
+   
+}
+
+@media (max-width: 575px) {
+   
+}
+
+@media screen and (max-width: 414px) {
+ 
+}
+
+@media screen and (max-width: 375px) {
+   
+}

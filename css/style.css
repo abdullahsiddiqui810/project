@@ -289,7 +289,7 @@ section {
 
 .banner-sec {
   background: url(../images/banner.jpg)no-repeat top center/cover;
-  height: 1000px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,32 +334,6 @@ section {
 .our-mission p {
   margin: 20px 0 60px;
 }
-
-/* .imgs-wrapper {
-  text-align: end;
-  position: relative;
-}
-
-.imgs-wrapper::before {
-  content: '';
-  position: absolute;
-  background: url(../images/club2.png) no-repeat center / cover;
-  width: 366px;
-  height: 366px;
-  bottom: -28px;
-  left: -5px;
-  z-index: 1;
-}
-
-.imgs-wrapper::after {
-  content: '';
-  position: absolute;
-  background: url(../images/white-shape.png) no-repeat center / cover;
-  width: 400px;
-  height: 400px;
-  bottom: -39px;
-  left: -17px;
-} */
 
 /* <!-- Section-2 --> */
 
@@ -559,7 +533,7 @@ section {
 
 .foot-text {
   color: var(--white);
-  padding: 7rem 0 4rem;
+  padding:7rem 8rem 4rem 0;
 }
 
 .foot-list {
