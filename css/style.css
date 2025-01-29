@@ -285,6 +285,31 @@ section {
   line-height: 2px;
 }
 
+/* animation css  */
+.menu-img-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 30px;
+}
+
+.menu-img-wrapper .image-container {
+  grid-template-columns: col-start / span 6;
+}
+
+.menu-img-wrapper .image-container-right {
+  grid-template-columns: col-start 7 / span 6;
+}
+
+.image-container, .image-container-right {
+  height: 600px;
+  width: 600px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out,
+    background-position 0.5s ease-in-out;
+}
+
 /* <!-- Banner Section --> */
 
 .banner-sec {
@@ -653,3 +678,4 @@ section {
 .line-ft-right:nth-child(4) {
   top: 59%;
 }
+

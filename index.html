@@ -55,31 +55,37 @@
                 </nav>
             </div>
             <div class="row">
-                <idv class="menu-overlay" id="menuOverlay">
+                <div class="menu-overlay" id="menuOverlay">
                     <button class="close-btn" id="closeBtn">&times;</button>
                     <div class="menu-content">
                         <div class="col-md-3">
                             <ul class="menu-links">
-                                <li data-image="./images/menu1.png"><a href="#home">HOME</a></li>
-                                <li data-image="./images/menu2.png"><a href="#about">ABOUT</a></li>
-                                <li data-image="./images/menu3.png"><a href="#discover">DISCOVER</a></li>
-                                <li class="nav-item dropdown" data-image="image4.jpg"><a
-                                        class="nav-link dropdown-toggle" href="#play" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">PLAY</a>
+                                <li><a href="#home" data-image="images/bg-img.png" data-position="0 0" data-image-right="images/bg-img.png" data-position-right="0 0">HOME</a></li>
+
+                                <li><a href="#about" data-image="images/bg-img.png" data-position="0 600px"  data-image-right="images/bg-img.png" data-position-right="0 600px">ABOUT</a></li>
+
+                                <li><a href="#discover" data-image="images/bg-img.png" data-position="0 1200px" data-image-right="images/bg-img.png" data-position-right="0 1200px">DISCOVER</a></li>
+
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#play" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-image="images/bg-img.png" data-position="0 1800px" data-image-right="images/bg-img.png" data-position-right="0 1800px">PLAY</a>
                                     <ul class="dropdown-menu sub-menu">
                                         <li><a class="dropdown-item" href="#">Golf</a></li>
                                         <li><a class="dropdown-item" href="#">Tennis</a></li>
                                     </ul>
                                 </li>
-                                <li data-image="image5.jpg"><a href="#contact">CONTACT</a></li>
+
+                                <li><a href="#contact" data-image="images/bg-img.png" data-position="0 2400px" data-image-right="images/bg-img.png" data-position-right="0 2400px">CONTACT</a></li>
                             </ul>
                         </div>
                         <div class="col-md-9">
-                            <div class="menu-image">
-                                <img id="menuImage" src="./images/menu1.png" alt="Hover Preview">
-                                <img id="menuImage" src="./images/menu1.png" alt="Hover Preview">
-                                <img id="menuImage" src="./images/menu2.png" alt="Hover Preview">
-                                <img id="menuImage" src="./images/menu3.png" alt="Hover Preview">
+                            <div class="menu-img-wrapper">
+                                <div
+                                class="image-container"
+                                style="background-image: url(images/bg-img.png); background-position:0px 0px"
+                            ></div>
+                            <div
+                                class="image-container-right"
+                                style="background-image: url(images/bg-img.png); background-position:0px 0px"
+                            ></div>
                             </div>
                         </div>
                     </div>
