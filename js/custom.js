@@ -122,3 +122,27 @@ scrollToTopButton.addEventListener('click', () => {
 });
 
 // *******************
+
+// Gsap Animation
+gsap.registerPlugin(ScrollTrigger);
+
+let headingAnimation = gsap.timeline({
+  defaults: {
+    duration: 1.5,
+    ease: 'power4.out',
+    opacity: 0,
+  },
+  scrollTrigger: {
+    trigger: '.club-sec',
+    start: 'top 80%',
+    markers: true,
+    toggleActions: 'restart none none none',
+  },
+});
+headingAnimation.from('.anm-icon', { y: 30 });
+headingAnimation.from('.anm-sub-heading', { y: 30 }, '-=1.2');
+headingAnimation.from('.anm-main-heading', { y: 40 }, '-=1.3');
+headingAnimation.from('.anm-para', { y: 50 }, '-=1.4');
+headingAnimation.from('.anm-sub-heading-2', { y: 50 }, '-=1.3');
+headingAnimation.from('.anm-para-2', { y: 50 }, '-=1.3');
+headingAnimation.from('.anm-btn', { y: 50 }, '-=1.3');
