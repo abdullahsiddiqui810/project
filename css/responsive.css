@@ -1,11 +1,16 @@
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1400px
-    } 
-}
 
 @media (max-width: 1440px) {
-    
+    .user-btn{
+        text-align: center;
+      }
+    .image-container, .image-container-right{
+        height: 500px;
+        width: 460px;
+    }
+    .navbar{
+        z-index: 0;
+    }
+    .close-btn{top: 0;}
     .about-boast-sec {
         background-position: -150px 80px;
     }
@@ -45,8 +50,24 @@
         width: 600px;
     }
 }
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px
+    } 
+   
+}
 
 @media (max-width: 1280px) {
+    .image-container, .image-container-right{
+        width: 400px;
+    }
+    .menu-content{
+        padding: 10px;
+    }
+    .menu-links li a {
+        font-size: 40px;
+        line-height: 80px;
+    }
     p {
         font-size: 16px;
       }
@@ -67,7 +88,6 @@
         position: relative;
         top: 0;
         right: 0;
-        width: auto;
     }
     .main-heading{
         font-size: 28px;
@@ -91,10 +111,19 @@
     .heading-min{
         font-size: 28px;
     }
+    .about-boast-sec {
+        background-position: -320px 80px;
+    }
+    .content-box.dark-box p{
+        padding-right: 0;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1120px) {
-    
+    .image-container, .image-container-right{
+        width: 340px;
+    }
     .club-sec .heading-wrapper br {
         display: none;
     }
@@ -203,6 +232,17 @@
     .line-ft{
         width: 40%;
     }
+    .menu-img-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-links li a {
+        font-size: 30px;
+    }
+    .content-box.dark-box {
+        padding: 34px 30px 42px;
+        right: 80px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -212,6 +252,13 @@
     .item-content-right{
         grid-column: col-start / span 7;
     }
+    .image-container-right {
+        display: none;
+    }
+    .content-box.dark-box {
+        right: 15px;
+        background: #0069aab8;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -219,7 +266,15 @@
 }
 
 @media (max-width: 575px) {
-
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;
+        gap: 15px;
+    }
+    .menu-img-wrapper{
+        display: none;
+    }
     .about-boast-sec {
         height: auto;
     }

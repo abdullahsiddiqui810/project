@@ -169,7 +169,9 @@ section {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.user-btn{
+  text-align: end;
+}
 .header-btn:hover {
   background: var(--black);
   color: var(--white);
@@ -201,11 +203,10 @@ section {
 }
 
 .menu-toggle .line {
-  width: 25px;
-  height: 3px;
+  width: 54px;
+  height: 2px;
   background-color: white;
 }
-
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -251,6 +252,9 @@ section {
   line-height: 99px;
 }
 
+.menu-links li a:hover{
+  color: var(--primary-color);
+}
 
 .menu-image {
   width: 400px;
@@ -278,8 +282,16 @@ section {
 
 .sub-menu {
   background-color: transparent;
+  position: relative !important;
+  transform: translate(0px, -20px) !important;
 }
-
+.dropdown-menu.sub-menu .dropdown-item {
+  font-size: 20px;
+  line-height: 30px;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: transparent;
+}
 .sub-menu li a {
   font-size: 20px;
   line-height: 2px;
