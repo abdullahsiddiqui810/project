@@ -85,9 +85,14 @@
         position: relative;
     }
     .golf-sec .content-box {
+<<<<<<< HEAD
+        position: relative;
+        right: 0;
+=======
         top: auto;
         right: 50px;
         width: 500px;
+>>>>>>> 27e7f2c5b3010190798ac38f046c8de1a8af728d
     }
     .main-heading{
         font-size: 28px;
@@ -150,9 +155,6 @@
     .foot-text {
         padding: 5rem 0 2rem;
     }
-    .footer-sec .contact-wrapper{
-        padding: 2rem ;
-    }
     .footer-sec .col-md-3 {
         flex: 100%;
         width: 100%;
@@ -177,12 +179,16 @@
 }
 
 @media (max-width: 992px) {
+<<<<<<< HEAD
+   
+=======
     .golf-sec .content-box {
         position: relative;
         top: 0;
         right: 0;
         width: auto;
     }
+>>>>>>> 27e7f2c5b3010190798ac38f046c8de1a8af728d
     .item-img-left {
         grid-column: col-start / span 5;
         grid-row: 1 / 2;
@@ -252,6 +258,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    .card-wrapper{margin: 10px 0;}
+    .club-sec .content-wrapper{
+        text-align: center;
+    }
+    .main-heading {
+        font-size: 24px;
+    }
     .item-content-left{
         grid-column: col-start 6 / span 7;
     }
@@ -264,6 +277,19 @@
     .content-box.dark-box {
         right: 15px;
         background: #0069aab8;
+    }
+    .golf-sec .content-box {
+        width: auto;
+        bottom: 490px;
+        background: #0069aa8a ;
+    }
+    .footer-sec .col-xl-6.col-lg-7{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .lifestyle-sec .content-wrapper p {
+        padding: 0 ;
     }
 }
 
