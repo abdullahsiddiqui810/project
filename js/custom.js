@@ -142,16 +142,8 @@ revealContainers.forEach((container) => {
   });
 
   clubSecAnimation
-    // .set(boxAnim, { y: 20, opacity: 0 })
     .from(boxAnim, { y: 40, opacity: 0, stagger: 0.3 })
     .from(imageanm, { y: '100%', duration: 2, ease: 'power4.out' }, '=-2');
-  // .set(vidSet, { scale: 1.3, transformOrigin: 'top right' })
-  // .set(boxAnim, { y: -20, opacity: 0 })
-  // .to(reveal, { x: 0, duration: 2, ease: Power4.easeInOut })
-  // .to(overlay, { x: '100%' }, '=-0.5')
-  // .to(vidSet, { scale: 1, duration: 1 }, '=-0.4')
-  // .to(serInfo2, { y: 0, duration: 1 }, '=-0.95')
-  // .to(animBd, { x: 0, duration: 1, ease: Power4.easeInOut }, '=-0.5');
 });
 
 // *****************
@@ -222,4 +214,86 @@ revealLifeContainers.forEach((container) => {
     },
     '=-0.5'
   );
+});
+
+// ************************
+
+// Boast Sec Animation
+
+let revealBoastContainers = document.querySelector('.about-boast-sec');
+boxAnim = document.querySelectorAll('.boast-anim-elm');
+contentBox = document.querySelectorAll('.content-box');
+let boastSecAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: revealBoastContainers,
+    start: 'top 50%',
+    toggleActions: 'restart none none reset',
+    markers: false,
+  },
+});
+boastSecAnimation
+  .from(contentBox, { y: -100, opacity: 0 })
+  .from(boxAnim, { y: 40, opacity: 0, stagger: 0.3, delay: 0.2 }, '=-.3');
+
+// *******************
+
+// Grid Section Animation
+
+let revealGridContainers = document.querySelector('.custom-section');
+let customSecAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: revealGridContainers,
+    start: 'top 50%',
+    toggleActions: 'restart none none reset',
+    markers: false,
+  },
+});
+boastSecAnimation
+  .from('.item-img-left .grid-img-anm', {
+    y: '-100%',
+    duration: 1,
+    ease: 'power4.out',
+    opacity: 0,
+  })
+  .from(
+    '.item-content-left .grid-anim-elm',
+    { y: -100, opacity: 0, stagger: 0.3 },
+    '=-.5'
+  );
+boastSecAnimation
+  .from(
+    '.item-img-right .grid-img-anm',
+    {
+      y: '100%',
+      duration: 1,
+      ease: 'power4.out',
+      opacity: 0,
+    },
+    '=-1.5'
+  )
+  .from(
+    '.item-content-right .grid-anim-elm',
+    { y: 100, opacity: 0, stagger: 0.3 },
+    '=-1.7'
+  );
+
+// *******************
+
+// Portfolios Section Animation
+
+let revealPortfolioContainers = document.querySelector('.portfolio-sec');
+let portfolioSecAnimation = gsap.timeline({
+  scrollTrigger: {
+    trigger: revealPortfolioContainers,
+    start: 'top 10%',
+    toggleActions: 'restart none none reset',
+    markers: false,
+  },
+});
+portfolioSecAnimation.from('.port-anm-elm', {
+  y: '100%',
+  duration: 1,
+  ease: 'power4.out',
+  opacity: 0,
+  // stagger: 0.1,
 });
