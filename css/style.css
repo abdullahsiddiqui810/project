@@ -124,7 +124,9 @@ section {
 .typo-three {
   transform: translate(-10%, -10%);
 }
-
+.typo-four {
+  transform: translate(40px, 3%);
+}
 .typography-img {
   position: absolute;
   width: 100%;
@@ -221,6 +223,7 @@ section {
   color: white;
   z-index: 10;
 }
+/* Topographic 6 */
 
 .menu-overlay.active {
   display: block;
@@ -243,8 +246,8 @@ section {
   align-items: center;
   padding: 50px;
   height: 100%;
+  background-image: linear-gradient(180deg, #002B45 7.75%, rgba(0, 43, 69, 0) 87.21%);
 }
-
 .menu-links li a {
   font-size: 50px;
   font-weight: 400;
