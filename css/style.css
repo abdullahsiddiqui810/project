@@ -314,7 +314,7 @@ section {
 
 .image-container, .image-container-right {
   height: 600px;
-  width: 600px;
+  width: 450px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
