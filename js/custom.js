@@ -126,23 +126,46 @@ scrollToTopButton.addEventListener('click', () => {
 // Gsap Animation
 gsap.registerPlugin(ScrollTrigger);
 
-let headingAnimation = gsap.timeline({
-  defaults: {
-    duration: 1.5,
-    ease: 'power4.out',
-    opacity: 0,
-  },
-  scrollTrigger: {
-    trigger: '.club-sec',
-    start: 'top 80%',
-    markers: true,
-    toggleActions: 'restart none none none',
-  },
+let revealContainers = document.querySelectorAll('.club-sec');
+revealContainers.forEach((container) => {
+  let boxAnim = container.querySelectorAll('.club-anim-elm');
+  imageanm = container.querySelector('.imgs-wrapper img');
+  let clubSecAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      start: 'top 60%',
+      toggleActions: 'restart none none reset',
+      markers: true,
+    },
+  });
+
+  clubSecAnimation
+    // .set(boxAnim, { y: 20, opacity: 0 })
+    .from(boxAnim, { y: 40, opacity: 0, stagger: 0.3 })
+    .from(imageanm, { y: '100%', duration: 2, ease: 'power4.out' }, '=-2');
+  // .set(vidSet, { scale: 1.3, transformOrigin: 'top right' })
+  // .set(boxAnim, { y: -20, opacity: 0 })
+  // .to(reveal, { x: 0, duration: 2, ease: Power4.easeInOut })
+  // .to(overlay, { x: '100%' }, '=-0.5')
+  // .to(vidSet, { scale: 1, duration: 1 }, '=-0.4')
+  // .to(serInfo2, { y: 0, duration: 1 }, '=-0.95')
+  // .to(animBd, { x: 0, duration: 1, ease: Power4.easeInOut }, '=-0.5');
 });
-headingAnimation.from('.anm-icon', { y: 30 });
-headingAnimation.from('.anm-sub-heading', { y: 30 }, '-=1.2');
-headingAnimation.from('.anm-main-heading', { y: 40 }, '-=1.3');
-headingAnimation.from('.anm-para', { y: 50 }, '-=1.4');
-headingAnimation.from('.anm-sub-heading-2', { y: 50 }, '-=1.3');
-headingAnimation.from('.anm-para-2', { y: 50 }, '-=1.3');
-headingAnimation.from('.anm-btn', { y: 50 }, '-=1.3');
+
+let revealGolfContainers = document.querySelectorAll('.golf-sec');
+revealGolfContainers.forEach((container) => {
+  let boxAnim = container.querySelectorAll('.golf-anim-elm');
+  imageanm = container.querySelector('.imgs-wrapper img');
+  let golfSecAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      start: 'top 60%',
+      toggleActions: 'restart none none reset',
+      markers: true,
+    },
+  });
+
+  golfSecAnimation
+    .from(boxAnim, { y: 40, opacity: 0, stagger: 0.3 })
+    .from(imageanm, { y: '100%', duration: 2, ease: 'power4.out' }, '=-2');
+});

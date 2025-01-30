@@ -355,6 +355,11 @@ section {
   padding-top: 150px;
 }
 
+.imgs-wrapper {
+  overflow: hidden;
+}
+
+
 .our-mission .sub-heading {
   font-size: 18px;
   font-weight: 700;
