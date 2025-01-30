@@ -253,6 +253,7 @@ section {
   font-weight: 400;
   color: #fff;
   line-height: 99px;
+  font-family: var(--fontlora);
 }
 
 .menu-links li a:hover{
@@ -317,7 +318,7 @@ section {
 
 .image-container, .image-container-right {
   height: 600px;
-  width: 600px;
+  width: 450px;
   overflow: hidden;
   background-size: cover;
   background-position: center;

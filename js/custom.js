@@ -76,8 +76,8 @@ let lastHoveredIndexRight = -1;
 
 menuLinks.forEach((link, index) => {
   link.addEventListener('mouseover', () => {
-    const imageUrl = link.getAttribute('data-image');
-    const position = link.getAttribute('data-position');
+    const imageUrl = link.getAttribute('data-image-right');
+    const position = link.getAttribute('data-position-right');
 
     let backgroundPosition = position;
     if (lastHoveredIndexRight !== -1) {
