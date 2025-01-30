@@ -192,7 +192,6 @@ section {
   align-items: center;
   padding: 20px 30px;
   background-color: transparent;
-  z-index: 99;
 }
 
 .menu-toggle {
