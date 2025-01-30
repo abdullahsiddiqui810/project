@@ -455,6 +455,7 @@ section {
   margin: auto;
   position: relative;
   top: 40px;
+  z-index: 1;
 }
 
 .line-down {

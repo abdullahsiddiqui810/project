@@ -126,6 +126,8 @@ scrollToTopButton.addEventListener('click', () => {
 // Gsap Animation
 gsap.registerPlugin(ScrollTrigger);
 
+// Club Section Animation
+
 let revealContainers = document.querySelectorAll('.club-sec');
 revealContainers.forEach((container) => {
   let boxAnim = container.querySelectorAll('.club-anim-elm');
@@ -135,7 +137,7 @@ revealContainers.forEach((container) => {
       trigger: container,
       start: 'top 60%',
       toggleActions: 'restart none none reset',
-      markers: true,
+      markers: false,
     },
   });
 
@@ -152,20 +154,72 @@ revealContainers.forEach((container) => {
   // .to(animBd, { x: 0, duration: 1, ease: Power4.easeInOut }, '=-0.5');
 });
 
+// *****************
+
+// Golf Section Animation
+
 let revealGolfContainers = document.querySelectorAll('.golf-sec');
 revealGolfContainers.forEach((container) => {
   let boxAnim = container.querySelectorAll('.golf-anim-elm');
-  imageanm = container.querySelector('.imgs-wrapper img');
+  imageanm = container.querySelectorAll('.golf-img-anm');
+  contentBox = container.querySelectorAll('.content-box');
   let golfSecAnimation = gsap.timeline({
     scrollTrigger: {
       trigger: container,
       start: 'top 60%',
       toggleActions: 'restart none none reset',
-      markers: true,
+      markers: false,
     },
   });
 
   golfSecAnimation
-    .from(boxAnim, { y: 40, opacity: 0, stagger: 0.3 })
-    .from(imageanm, { y: '100%', duration: 2, ease: 'power4.out' }, '=-2');
+    .from(imageanm, {
+      x: '-50%',
+      duration: 1,
+      ease: 'power4.out',
+      stagger: 0.5,
+      opacity: 0,
+    })
+    .from(contentBox, { y: 100, opacity: 0 }, '=-.7')
+    .from(boxAnim, { y: 40, opacity: 0, stagger: 0.3 }, '=-0.8');
+});
+
+// *****************
+
+// lifeStyle Section Animation
+
+let revealLifeContainers = document.querySelectorAll('.lifestyle-sec');
+revealLifeContainers.forEach((container) => {
+  let boxAnim = container.querySelectorAll('.lifestyle-anim-elm');
+  let lifeStyleSecAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      start: 'top 60%',
+      toggleActions: 'restart none none reset',
+      markers: false,
+    },
+  });
+
+  lifeStyleSecAnimation.from(boxAnim, { y: 40, opacity: 0, stagger: 0.3 });
+
+  let lifeStyleCardAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.lifestyle-cards',
+      start: 'top 50%',
+      toggleActions: 'restart none none reset',
+      markers: true,
+    },
+  });
+  lifeStyleCardAnimation.from('.box-odd .life-anm-elm', {
+    y: '100%',
+    opacity: 0,
+  });
+  lifeStyleCardAnimation.from(
+    '.box-even .life-anm-elm',
+    {
+      y: '-100%',
+      opacity: 0,
+    },
+    '=-0.5'
+  );
 });
