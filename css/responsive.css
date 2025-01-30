@@ -132,7 +132,7 @@
     .club-sec  .default-btn{
         margin-bottom: 15px;
     }
-     .paragraph-margin{
+     .paragraph-margin, .item-content-left .paragraph-margin{
         padding: 0;
      }
      .club-sec .content-wrapper p{
@@ -260,13 +260,12 @@
         display: none;
     }
     .content-box.dark-box {
-        right: 15px;
+        right: 0px;
         background: #0069aab8;
     }
     .golf-sec .content-box {
         width: auto;
-        bottom: 490px;
-        background: #0069aa8a ;
+        bottom: 0;
     }
     .footer-sec .col-xl-6.col-lg-7{
         display: flex;

@@ -207,7 +207,7 @@ revealLifeContainers.forEach((container) => {
       trigger: '.lifestyle-cards',
       start: 'top 50%',
       toggleActions: 'restart none none reset',
-      markers: true,
+      markers: false,
     },
   });
   lifeStyleCardAnimation.from('.box-odd .life-anm-elm', {
