@@ -250,6 +250,7 @@ section {
   font-weight: 400;
   color: #fff;
   line-height: 99px;
+  font-family: var(--fontlora);
 }
 
 .menu-links li a:hover{
