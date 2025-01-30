@@ -85,14 +85,8 @@
         position: relative;
     }
     .golf-sec .content-box {
-<<<<<<< HEAD
         position: relative;
         right: 0;
-=======
-        top: auto;
-        right: 50px;
-        width: 500px;
->>>>>>> 27e7f2c5b3010190798ac38f046c8de1a8af728d
     }
     .main-heading{
         font-size: 28px;
@@ -179,16 +173,7 @@
 }
 
 @media (max-width: 992px) {
-<<<<<<< HEAD
    
-=======
-    .golf-sec .content-box {
-        position: relative;
-        top: 0;
-        right: 0;
-        width: auto;
-    }
->>>>>>> 27e7f2c5b3010190798ac38f046c8de1a8af728d
     .item-img-left {
         grid-column: col-start / span 5;
         grid-row: 1 / 2;
